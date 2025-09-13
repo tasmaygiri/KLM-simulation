@@ -1,0 +1,20 @@
+
+/control/verbose 2
+/run/verbose 2
+# /tracking/verbose 0 # Usually turn off detailed tracking messages for clarity
+# /event/verbose 0
+
+/run/initialize
+
+/vis/open TSGQt
+
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 70 20
+/vis/viewer/set/style wireframe 
+/vis/scene/add/axes 0 0 0 1 m
+/vis/viewer/zoom 1.2
+
+/vis/scene/add/trajectories smooth
+/vis/scene/add/hits
+# Accumulate trajectories over multiple events (optional)
+/vis/scene/endOfEventAction accumulate 100 # Keep tracks from up to 100 events
