@@ -22,7 +22,7 @@ This project contains a C++ Geant4 application to simulate particle interactions
 
 
 ## Note (when uploading)
-Still work is going on, hence some files are just there and not being used while cmake-ing the application. Check CMakeLists.txt. Regardless of that, current state is working.
+Still work is going on, hence some files are just there and not being used while cmake-ing the application. Check CMakeLists.txt. Regardless of that, current state should work.
 
 ## Building
 Clone the repository and build with CMake:
